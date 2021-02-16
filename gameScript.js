@@ -13,7 +13,6 @@ var wins = 0;
 var losses = 0;
 var solution = [];
 var answer = [];
-
 //Refs to Win/loss Text and Timer text, and the word text startbutton, restartbutton 
 
 function startGame(){
@@ -33,8 +32,18 @@ function winGame(){
 }
 
 function startTimer(){
-
+    var time = 20;
+    var timerElement = document.querySelector(".timer_Text");
+    
+    timerElement.innerHTML="";
+    var timer = setInterval(function(){
+        time --
+        timerElement.textContent=time
+    }, 1000);
+    
 }
+
+startTimer()
 
 function checkKeyboardInput(keyPressed){
 
