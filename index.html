@@ -2,8 +2,32 @@
 <html>
     <head>
         <title>Word Guessing Game</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        
+        <header>
+            <h1>GUESSING GAME</h1>
+            <button>Start</button>
+        </header>
+
+        <div class="main_body">
+            <div class="word-holder">
+                <h1 class="word">_ _ _ _ _ _</h1>
+            </div>
+
+            <div class="sidebar">
+                <div class="top-bar">
+                    <div class="win-losses">
+                        <h3>wins: </h3>
+                        <h3>losses: </h3>
+                    </div>
+                    <button class="reset-button">reset</button>
+                </div>
+                <div class="timer">
+                    <h1 class="timer_Text">Timer</h1>
+                </div>
+            </div>
+        </div>
+        <script src="gameScript.js"></script>
     </body>
 </html>
